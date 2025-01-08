@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Universal Selector
+        Element အားလုံးအပေါ် မှာသက်ရောက်မှုရှိ */
+        * {
+            color: red;
+            margin: 0;
+            padding: 0;
+        }
+        /* Element Selector 
+                tag name တွေကို select လုပ်တာ
+                ကို select လုပ်လိုက်တဲ့ elelment တေွ အပေါ် သက်ရောက်မှုရှိတာ*/
+
+        h1 {
+            color: black;
+        }
+        p {
+            background-color: aqua;
+        }
+        /* Id selector
+             id attribute ထဲမှာရှိတဲ့ value ကို select လုပ်တာ
+             id attribute ရှိတဲ့ element တိုင်းကို သက်ရောက်မှုရှိတယ်
+             Id ကို select လုပ်ပြီဆိုရင် # နဲ့ select လုပ်တယ် */
+        #nose {
+            background-color: pink;
+            font-size: 35px;
+        }
+        /* class selector
+            class attribute မှာရှိတဲ့ value ကို select လုပ်တာ
+            class attribute ရှိတဲ့ element တိုင်းကို သက်ရောက်
+            Classကို select လုပ်ပြီဆိုရင် . နဲ့လုပ်ရတယ်*/
+        .eye-makeup {
+            color: brown;
+            background-color: white;
+        }
+
+        /* <!-- attribute Selector -->s */
+
+        a[title="Google Website"] {
+            font-size: 50px;
+        }
+        input[type="email"] {
+            background-color: red;
+        }
+
+        /* Decendant Selector
+         အောက်ပါ example အရ div ထဲမှာရှိတဲ့ ptag element အားလုံးအပေါ် သက်ရောက်တယ် */
+        div p {
+            background-color: yellow;
+        }
+
+        /* Child Selector 
+         အောက်ပါ example အရ div ထဲမှာရှိတဲ့  child ဖြစ်တဲ့ p element အားလုံးကို သက်ရောက်တယ်
+          child မဟုတ်တဲ့ span ထဲမှာ ရှိတဲ့ p tag အလုပ်မလုပ်*/
+        div>p {
+            color: black;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Selector</h1>
+    <p>Universal Selector</p>
+    <p>Hello CSS</p>
+    <p id="nose">Nose</p>
+
+    <p class="eye-makeup">Left Eye</p>
+    <p class="eye-makeup">Right Eye</p>
+
+    <a href="" title="Google Website">Google</a>
+    <input type="email" name="" id="">
+    <input type="text" name="" id="">
+
+    <div>
+        <p>this is paragraph 1</p>
+        <p>this is paragraph 2</p>
+        <p>this is paragraph 3</p>
+        <span>
+            <p>this is paragraph 4</p>
+        </span>
+        <p>this is paragraph 5</p>
+
+    </div>
+
+</body>
+</html>
